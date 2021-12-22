@@ -11,29 +11,27 @@
         android:id="@+id/back"
         android:layout_width="90dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#F44336"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/trueButton"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintTop_toTopOf="@+id/nextButton"
         app:srcCompat="?attr/actionModeCloseDrawable"
-        tools:ignore="TouchTargetSizeCheck"
-        app:tint="#FFFFFF" />
+        app:tint="#FFFFFF"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/QuestionTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="25dp"
         android:gravity="center"
         android:text="Filler Text"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/trueButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -46,34 +44,40 @@
         android:id="@+id/trueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
+        android:layout_marginStart="18dp"
         android:backgroundTint="#F44336"
         android:text="True"
-        app:layout_constraintBaseline_toBaselineOf="@+id/FalseButton"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
     <Button
         android:id="@+id/FalseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="18dp"
         android:backgroundTint="#F44336"
         android:text="False"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <ImageButton
         android:id="@+id/nextButton"
         android:layout_width="90dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#F44336"
         android:rotationY="180"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/FalseButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="?attr/actionModeCloseDrawable"
         app:tint="#FFFFFF" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

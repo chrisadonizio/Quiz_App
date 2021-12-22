@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Quiz</string>
+    <string name="toast_message">Well done</string>
+    <string name="question1">Anciet Egyptians were the first to invent modern bread</string>
+    <string name="toast_message2">Wrong. uninstall</string>
+    <string name="question2">Unsliced bread is more common than pre-sliced</string>
+    <string name="question3">Romans spread toast knowledge throughout Europe</string>
+    <string name="question4">Alan MacMasters invented the electric toaster</string>
+    <string name="question5">72% of American homes have a toaster</string>
 </resources>
